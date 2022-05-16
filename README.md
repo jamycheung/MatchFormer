@@ -34,17 +34,17 @@ data
 │   │   └── test.npz
 │   └── test
 │   	├── scene0707_00
-│    ├── ...
-│    └── scene0806_00
+│   	├── ...
+│   	└── scene0806_00
 └── megadepth
     ├── index
     │	  ├── 0015_0.1_0.3.npz
-    │   ├── ...
-    │   ├── 0022_0.5_0.7.npz
-    │   └── megadepth_test_1500.txt
+    │	  ├── ...
+    │	  ├── 0022_0.5_0.7.npz
+    │	  └── megadepth_test_1500.txt
     └── test
     	  ├── Undistorted_SfM
-       └── phoenix
+     	 └── phoenix
  ```
 
 
