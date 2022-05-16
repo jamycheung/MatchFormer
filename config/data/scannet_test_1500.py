@@ -1,6 +1,6 @@
 from config.data.base import cfg
 
-TEST_BASE_PATH = "data/scannet/scannet_test_1500"
+TEST_BASE_PATH = "data/scannet/index"
 
 cfg.DATASET.TEST_DATA_SOURCE = "ScanNet"
 cfg.DATASET.TEST_DATA_ROOT = "data/scannet/test"

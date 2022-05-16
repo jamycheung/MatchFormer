@@ -35,17 +35,15 @@ data
 │   └── test
 │   	├── scene0707_00
 │    	├── ...
-│       └── scene0806_00
+│     └── scene0806_00
 └── megadepth
     ├── index
-    │	├── trainvaltest_list
-    │		└── val_list.txt
-    │   └── scene_info_val_1500
-    │		 ├── 0015_0.1_0.3.npz
-    │		 ├── ...
-    │		 └── 0022_0.5_0.7.npz
+    │	  ├── 0015_0.1_0.3.npz
+    │   ├── ...
+    │   ├── 0022_0.5_0.7.npz
+    │   └── megadepth_test_1500.txt
     └── test
-    	├── Undistorted_SfM
+    	  ├── Undistorted_SfM
         └── phoenix
  ```
 
@@ -66,6 +64,8 @@ Put the weight at `model/weights`.
 MATCHFORMER.BACKBONE_TYPE = 'largesea'
 MATCHFORMER.SCENS = 'indoor'
 MATCHFORMER.RESOLUTION = (8,2)
+MATCHFORMER.COARSE.D_MODEL = 256
+MATCHFORMER.COARSE.D_FFN = 256
 
 python test.py /config/data/scannet_test_1500.py --ckpt_path /model/weights/indoor-large-SEA.ckpt --gpus=1 --accelerator="ddp"
 ```
@@ -75,6 +75,8 @@ python test.py /config/data/scannet_test_1500.py --ckpt_path /model/weights/indo
 MATCHFORMER.BACKBONE_TYPE = 'litela'
 MATCHFORMER.SCENS = 'indoor'
 MATCHFORMER.RESOLUTION = (8,4)
+MATCHFORMER.COARSE.D_MODEL = 192
+MATCHFORMER.COARSE.D_FFN = 192
 
 python test.py /config/data/scannet_test_1500.py --ckpt_path /model/weights/indoor-lite-LA.ckpt --gpus=1 --accelerator="ddp"
 ```
@@ -86,6 +88,8 @@ python test.py /config/data/scannet_test_1500.py --ckpt_path /model/weights/indo
 MATCHFORMER.BACKBONE_TYPE = 'largela'
 MATCHFORMER.SCENS = 'outdoor'
 MATCHFORMER.RESOLUTION = (8,2)
+MATCHFORMER.COARSE.D_MODEL = 256
+MATCHFORMER.COARSE.D_FFN = 256
 
 python test.py /config/data/megadepth_test_1500.py --ckpt_path /model/weights/outdoor-large-LA.ckpt --gpus=1 --accelerator="ddp"
 ```
@@ -95,6 +99,8 @@ python test.py /config/data/megadepth_test_1500.py --ckpt_path /model/weights/ou
 MATCHFORMER.BACKBONE_TYPE = 'litesea'
 MATCHFORMER.SCENS = 'outdoor'
 MATCHFORMER.RESOLUTION = (8,4)
+MATCHFORMER.COARSE.D_MODEL = 192
+MATCHFORMER.COARSE.D_FFN = 192
 
 python test.py /config/data/megadepth_test_1500.py --ckpt_path /model/weights/indoor-large-SEA.ckpt --gpus=1 --accelerator="ddp"
 ```

@@ -205,7 +205,7 @@ class AttentionBlock(nn.Module):
         return x
 
 class Matchformer_SEA_lite(nn.Module):
-    def __init__(self, config, img_size=224, in_chans=1, embed_dims=[128, 192, 256, 512], num_heads=[1, 2, 4, 8],sr_ratios=[8,4,2,1]
+    def __init__(self, img_size=224, in_chans=1, embed_dims=[128, 192, 256, 512], num_heads=[1, 2, 4, 8],sr_ratios=[8,4,2,1]
                 ,stage1_cross = [False,False,True],stage2_cross = [False,False,True],stage3_cross = [False,True,True],stage4_cross = [False,True,True]):
         super().__init__()
         #Attention
