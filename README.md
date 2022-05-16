@@ -44,7 +44,7 @@ data
     │	  └── megadepth_test_1500.txt
     └── test
     	  ├── Undistorted_SfM
-     	 └── phoenix
+    	  └── phoenix
  ```
 
 
