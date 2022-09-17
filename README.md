@@ -1,5 +1,8 @@
 # MatchFormer: Interleaving Attention in Transformers for Feature Matching
 
+### News
+**MatchFormer** [[**PDF**](https://arxiv.org/pdf/2203.09645.pdf)] is accepted to **ACCV2022**.
+
 ![matchformer](matchformer.png)
 
 ### Introduction
@@ -114,10 +117,10 @@ coming soon...
 If you are interested in this work, please cite the following work:
 
 ```
-@article{wang2022matchformer,
+@inproceedings{wang2022matchformer,
   title={MatchFormer: Interleaving Attention in Transformers for Feature Matching},
   author={Wang, Qing and Zhang, Jiaming and Yang, Kailun and Peng, Kunyu and Stiefelhagen, Rainer},
-  journal={arXiv preprint arXiv:2203.09645},
+  booktitle={Asian Conference on Computer Vision},
   year={2022}
 }
 ```
