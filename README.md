@@ -2,9 +2,9 @@
 
 ### MatchFormer: Interleaving Attention in Transformers for Feature Matching
 
-Qing Wang*, [Jiaming Zhang](https://jamycheung.github.io/)*, [Kailun Yang](https://yangkailun.com/)†, Kunyu Peng, [Rainer Stiefelhagen](https://cvhci.anthropomatik.kit.edu/people_596.php)
+Qing Wang∗, [Jiaming Zhang](https://jamycheung.github.io/)∗, [Kailun Yang](https://yangkailun.com/)†, Kunyu Peng, [Rainer Stiefelhagen](https://cvhci.anthropomatik.kit.edu/people_596.php)
 
-* denotes equal contribution and † denotes corresponding author
+∗ denotes equal contribution and † denotes corresponding author
 
 ### News
 - [09/2022] **MatchFormer** [[**PDF**](https://arxiv.org/pdf/2203.09645.pdf)] is accepted to **ACCV2022**.
