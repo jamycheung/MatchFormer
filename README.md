@@ -1,7 +1,7 @@
 # MatchFormer: Interleaving Attention in Transformers for Feature Matching
 
 ### News
-**MatchFormer** [[**PDF**](https://arxiv.org/pdf/2203.09645.pdf)] is accepted to **ACCV2022**.
+- [09/2022] **MatchFormer** [[**PDF**](https://arxiv.org/pdf/2203.09645.pdf)] is accepted to **ACCV2022**.
 
 ![matchformer](matchformer.png)
 
