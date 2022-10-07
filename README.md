@@ -116,7 +116,7 @@ python test.py /config/data/megadepth_test_1500.py --ckpt_path /model/weights/in
 
 ### Training
 
-coming soon...
+Based on the LOFTER code to train MatchFormer, replace LoFTR/src/loftr/backbone/ with model/backbone/match_**.py to train.
 
 ### Citation
 
